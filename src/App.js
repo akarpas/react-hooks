@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0);
   const [input, setInput] = useState('');
   const [tempName, setTempName] = useState(null);
