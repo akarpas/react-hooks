@@ -6,8 +6,8 @@
 
 .Button {
   outline: none;
-  width: 10vw;
-  padding: 1vh 0;
+  min-width: 10vw;
+  padding: 1vh 1vw;
   color: white;
   background-color: black;
   border-radius: 10px;
@@ -37,7 +37,7 @@
 .Input {
   margin: 0 0 2vh 0;
   height: 5vh;
-  width: 20vw;
+  min-width: 20vw;
   border: 1px solid lightgray;
   font-size: 3vh;
   text-align: center;
