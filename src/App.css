@@ -17,6 +17,11 @@
   padding: 2vh 0 2vh 0;
 }
 
+.Title {
+  margin-top: 4vh;
+  border-top: 1px solid rgba(0,0,0,0.8)
+}
+
 .Name {
   padding: 2vh 0 2vh 0;
 }
