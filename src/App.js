@@ -51,6 +51,7 @@ const App = () => {
             onClick={(event) => {
               event.preventDefault()
               setName(null)
+              setTempName(null)
               setInput('')}
             }
             className="Button">Clear Name</button>
