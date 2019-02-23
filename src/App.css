@@ -35,4 +35,6 @@
   border: 1px solid lightgray;
   font-size: 3vh;
   text-align: center;
+  outline: none;
+  border-radius: 5px;
 }
