@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
+  const [input, setInput] = useState('');
   const [tempName, setTempName] = useState(null);
   const [name, setName] = useState(null);
 
@@ -30,14 +31,34 @@ function App() {
       <h1 className="Title">Set a Page Title:</h1>
       <h2 className="Name">{name ? name : 'No Name Set'}</h2>
       <form
-        onSubmit={(event) => {
-          event.preventDefault()
-          setName(tempName)}
-        }
         className="NameContainer"
       >
-        <input className="Input" placeholder="Add a Name" onChange={(event) => setTempName(event.target.value)} />
-        <button className="Button">Set Name</button>
+        <input
+          value={input}
+          className="Input"
+          placeholder="Add a Name"
+          onChange={(event) => {
+            setInput(event.target.value)
+            setTempName(event.target.value)
+          }}
+        />
+        <div>
+          <button
+            onClick={(event) => {
+              event.preventDefault()
+              setName(tempName)}
+            }
+            className="Button"
+          >Update Name</button>
+          <button
+            onClick={(event) => {
+              event.preventDefault()
+              setName(null)
+              setInput('')}
+            }
+            className="Button"
+          >Clear Name</button>
+        </div>
       </form>
     </div>
   );
