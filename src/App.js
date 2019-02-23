@@ -7,7 +7,7 @@ function App() {
   const [name, setName] = useState(null);
 
   useEffect(() => {
-    document.title = name ? name : "React Hooks " + count;
+    document.title = name ? name + " " + count : "React Hooks " + count;
   }, [count, name])
 
   const increment = () => {
@@ -27,7 +27,8 @@ function App() {
       <h1 className="Count">{count}</h1>
       <button className="Button" onClick={decrement}>Down</button>
       <button className="Button" onClick={increment}>Up</button>
-      <h1 className="Name">{name ? name : 'No Name Set'}</h1>
+      <h1 className="Title">Set a Page Title:</h1>
+      <h2 className="Name">{name ? name : 'No Name Set'}</h2>
       <form
         onSubmit={(event) => {
           event.preventDefault()
