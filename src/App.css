@@ -7,7 +7,7 @@
 .Button {
   outline: none;
   width: 10vw;
-  height: 4vh;
+  padding: 1vh 0;
   color: white;
   background-color: black;
   border-radius: 10px;
