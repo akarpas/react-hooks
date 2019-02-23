@@ -30,9 +30,7 @@ function App() {
       <button className="Button" onClick={increment}>Up</button>
       <h1 className="Title">Set a Page Title:</h1>
       <h2 className="Name">{name ? name : 'No Name Set'}</h2>
-      <form
-        className="NameContainer"
-      >
+      <form className="NameContainer">
         <input
           value={input}
           className="Input"
@@ -48,16 +46,14 @@ function App() {
               event.preventDefault()
               setName(tempName)}
             }
-            className="Button"
-          >Update Name</button>
+            className="Button">Update Name</button>
           <button
             onClick={(event) => {
               event.preventDefault()
               setName(null)
               setInput('')}
             }
-            className="Button"
-          >Clear Name</button>
+            className="Button">Clear Name</button>
         </div>
       </form>
     </div>
