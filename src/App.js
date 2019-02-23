@@ -7,8 +7,8 @@ function App() {
   const [name, setName] = useState(null);
 
   useEffect(() => {
-    document.title = "React Hooks " + count;
-  }, [count])
+    document.title = name ? name : "React Hooks " + count;
+  }, [count, name])
 
   const increment = () => {
     setCount(count + 1);
