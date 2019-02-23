@@ -16,3 +16,23 @@
 .Count {
   padding: 2vh 0 2vh 0;
 }
+
+.Name {
+  padding: 2vh 0 2vh 0;
+}
+
+.NameContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Input {
+  margin: 0 0 2vh 0;
+  height: 5vh;
+  width: 20vw;
+  border: 1px solid lightgray;
+  font-size: 3vh;
+  text-align: center;
+}
